@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2
+CMAKE_SOURCE_DIR = /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build
+CMAKE_BINARY_DIR = /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/main.dir/progress.make
 include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.c.o: /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c
+CMakeFiles/main.dir/src/main.c.o: /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c > CMakeFiles/main.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c > CMakeFiles/main.dir/src/main.c.i
 
 CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c -o CMakeFiles/main.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c -o CMakeFiles/main.dir/src/main.c.s
 
 CMakeFiles/main.dir/src/functions.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/functions.c.o: /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/functions.c
+CMakeFiles/main.dir/src/functions.c.o: /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/functions.c
 CMakeFiles/main.dir/src/functions.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/functions.c.o -MF CMakeFiles/main.dir/src/functions.c.o.d -o CMakeFiles/main.dir/src/functions.c.o -c /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/functions.c.o -MF CMakeFiles/main.dir/src/functions.c.o.d -o CMakeFiles/main.dir/src/functions.c.o -c /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/functions.c
 
 CMakeFiles/main.dir/src/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/src/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/functions.c > CMakeFiles/main.dir/src/functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/functions.c > CMakeFiles/main.dir/src/functions.c.i
 
 CMakeFiles/main.dir/src/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/src/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/functions.c -o CMakeFiles/main.dir/src/functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/functions.c -o CMakeFiles/main.dir/src/functions.c.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -109,7 +109,7 @@ main: CMakeFiles/main.dir/src/main.c.o
 main: CMakeFiles/main.dir/src/functions.c.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2 /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2 /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2 /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2 /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles/main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/main.dir/depend
 

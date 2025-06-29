@@ -8,3 +8,5 @@ typedef struct{
     char store[MAX_STORE_LEN];
     double good_price;
 } PRICE;
+
+#define MAX_GOODS 100

@@ -9,81 +9,54 @@
 
 #include "functions.h"
 
-#define MAX_GOODS 100
-
 int main(){
     PRICE prices[MAX_GOODS];
     int price_count = 0;
     const char *filename = "prices.db";
     
-    // Проверка существования файла
-    FILE *file = fopen(filename, "rb");
-    if (file) {
-        fclose(file);
-        printw("Файл базы данных уже существует!\n");
-        printw("Нажмите любую клавишу для выхода...");
-        refresh();
-        getch();
-        return 0;
-    }
-    
-
     initscr(); //инициализация ncurses
     cbreak(); //включение мгновенной обработки клавиш
-    noecho(); //выключение эхо-режима
+    echo(); //включение эхо-режима
     keypad(stdscr, TRUE); //поддержка функциональных клавиш и клавиш со стрелками
 
-    int n = 1;
-    //ввод количества записей
-    do{
-        if(n < 1 || n > MAX_GOODS){
-                mvprintw(3, 1, "Недопустимое количество товаров!");
-                mvprintw(4, 1, "Нажмите любую клавишу для повторного ввода.");
-                refresh();
-                getch();
-            move(3, 1); clrtoeol(); //очищение от текущей позиции курсора до конца строки
-                move(4, 1); clrtoeol();
-            }
-
-            mvprintw(1, 1, "Введите количество товаров (1-%d): ", MAX_GOODS);
-            char buffer[10];
-            echo();
-            getnstr(buffer, 9);
-            n = atoi(buffer); //преобразует строку символов в целое число
-            noecho();
-    } while(n < 1 || n > MAX_GOODS);
-    
-    //ввод данных
-    for(int i = 0; i < n; i++){
-        clear();
-        mvprintw(0, 0, "Ввод товара %d из %d", i + 1, n);
-        while(!input_price(2, 2, &prices[price_count])){
-            mvprintw(10, 2, "Ошибка ввода! Нажмите любую клавишу для повторного ввода.");
-            refresh();
-            getch();
-            clear();
-	    refresh();
-        }
-        price_count++;
-        refresh();
-    }
-    
-    //сохранение в файл
-    if(save_to_file(filename, prices, price_count) != 0){
-        mvprintw(10, 2, "Ошибка сохранения файла! Нажмите любую клавишу для выхода...");
-        refresh();
-        getch();
-        endwin();
+    // Проверка существования файла
+    FILE *file = fopen(filename, "rb");
+    //файл есть
+    if(file){
+        fclose(file);
+        if(!db_exists()) return 0;
         return 1;
     }
-    
-    //успешное завершение
-    clear();
-    mvprintw(1, 1, "Данные успешно сохранены в %s!", filename);
-    mvprintw(3, 1, "Нажмите любую клавишу для выхода...");
-    refresh();
-    getch();
-    
-    endwin();
-    return 0;
+
+    //файла нет
+    else{
+        char choice_char;
+        do{
+            mvprintw(0, 2, "Database not found!");
+            mvprintw(1, 2, "1 Exit the application and download it or go to the database creation mode!");
+            mvprintw(2, 2, "2 Go to the database creation mode!");
+            mvprintw(4, 2, "Select 1 or 2 and enter:");
+            
+            move(4, 2 + 25);
+            choice_char = getch();
+
+            switch(choice_char){
+                case '1':
+                    endwin();
+                    return 0;
+                case '2':
+                    //создаем db
+                    create_db(filename, &prices[0], &price_count);
+                    //вызываем сценарий того что она есть 
+                    if(!db_exists()) return 0;
+                    return 1;
+                default:
+                    mvprintw(6, 2, "Input error! Press any key to re-enter.");
+                    refresh();
+                    getch();
+                    clear();
+                    refresh();
+            }
+        } while( !(choice_char == '1' || choice_char == '2') );
+    }
 }

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/functions.c" "CMakeFiles/main.dir/src/functions.c.o" "gcc" "CMakeFiles/main.dir/src/functions.c.o.d"
-  "/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
+  "/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/functions.c" "CMakeFiles/main.dir/src/functions.c.o" "gcc" "CMakeFiles/main.dir/src/functions.c.o.d"
+  "/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

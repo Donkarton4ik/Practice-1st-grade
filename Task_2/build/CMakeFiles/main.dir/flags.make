@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/./include
+C_INCLUDES = -I/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/./include
 
 C_FLAGS = 
 

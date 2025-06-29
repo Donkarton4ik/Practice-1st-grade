@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/src/main.c.o: \
- /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/src/main.c \
+ /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/src/main.c \
  /usr/include/stdc-predef.h /usr/include/curses.h \
  /usr/include/ncurses_dll.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -59,6 +59,6 @@ CMakeFiles/main.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/./include/price.h \
- /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/./include/db_head.h \
- /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practic/Task_2/./include/functions.h
+ /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/./include/price.h \
+ /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/./include/db_head.h \
+ /mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/./include/functions.h
