@@ -31,12 +31,12 @@ int main(){
     else{
         char choice_char;
         do{
-            mvprintw(0, 2, "Database not found!");
-            mvprintw(1, 2, "1 Exit the application and download it or go to the database creation mode!");
-            mvprintw(2, 2, "2 Go to the database creation mode!");
-            mvprintw(4, 2, "Select 1 or 2 and enter:");
+            mvprintw(1, 2, "Database not found!");
+            mvprintw(2, 2, "1 Exit the application and download it or go to the database creation mode!");
+            mvprintw(3, 2, "2 Go to the database creation mode!");
+            mvprintw(5, 2, "Select 1 or 2 and enter:");
             
-            move(4, 2 + 25);
+            move(5, 2 + 25);
             choice_char = getch();
 
             switch(choice_char){
@@ -50,7 +50,7 @@ int main(){
                     if(!db_exists(filename, &prices[0])) return 0;
                     return 1;
                 default:
-                    mvprintw(6, 2, "Input error! Press any key to re-enter.");
+                    mvprintw(7, 2, "Input error! Press any key to re-enter.");
                     refresh();
                     getch();
                     clear();
