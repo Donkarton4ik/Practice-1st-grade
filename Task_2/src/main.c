@@ -11,7 +11,6 @@
 
 int main(){
     PRICE prices[MAX_GOODS];
-    int price_count = 0;
     const char *filename = "prices.db";
     
     initscr(); //инициализация ncurses
@@ -19,12 +18,12 @@ int main(){
     echo(); //включение эхо-режима
     keypad(stdscr, TRUE); //поддержка функциональных клавиш и клавиш со стрелками
 
-    // Проверка существования файла
+    //проверка существования файла
     FILE *file = fopen(filename, "rb");
     //файл есть
     if(file){
         fclose(file);
-        if(!db_exists()) return 0;
+        if(!db_exists(filename, &prices[0])) return 0;
         return 1;
     }
 
@@ -46,9 +45,9 @@ int main(){
                     return 0;
                 case '2':
                     //создаем db
-                    create_db(filename, &prices[0], &price_count);
+                    create_db(filename, &prices[0]);
                     //вызываем сценарий того что она есть 
-                    if(!db_exists()) return 0;
+                    if(!db_exists(filename, &prices[0])) return 0;
                     return 1;
                 default:
                     mvprintw(6, 2, "Input error! Press any key to re-enter.");
