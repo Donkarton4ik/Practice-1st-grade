@@ -123,7 +123,7 @@ int save_to_file(const char* filename, PRICE* prices, int count){
     }
 
     HEAD_DB header = {
-        .signature = {"AAAA"},
+        .signature = {"GASO"},
         .transaction_num = 0,
         .num_structures = count,
         .checksum = crc32(0L, (const Bytef *)prices, count * sizeof(PRICE))
