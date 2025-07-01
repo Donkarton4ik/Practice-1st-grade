@@ -123,7 +123,7 @@ int save_to_file(const char* filename, PRICE* prices, int count){
     }
 
     HEAD_DB header = {
-        .signature = {"AAAA"},
+        .signature = {"GASO"},
         .transaction_num = 0,
         .num_structures = count,
         .checksum = crc32(0L, (const Bytef *)prices, count * sizeof(PRICE))
@@ -196,7 +196,7 @@ int add_product(const char* filename, PRICE* prices){
     
     //запись нового товара
     PRICE new_product;
-    while(!input_price(&new_product, count, count)){
+    while(!input_price(&new_product, count+1, count+1)){
         mvprintw(7, 2, "Input error! Press any key to re-enter.");
         refresh();
         getch();
