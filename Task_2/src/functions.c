@@ -196,7 +196,7 @@ int add_product(const char* filename, PRICE* prices){
     
     //запись нового товара
     PRICE new_product;
-    while(!input_price(&new_product, count, count)){
+    while(!input_price(&new_product, count+1, count+1)){
         mvprintw(7, 2, "Input error! Press any key to re-enter.");
         refresh();
         getch();
