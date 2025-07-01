@@ -1,3 +1,0 @@
-/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles/main.dir
-/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/gasov_sw/Desktop/Politech/Alg/Practice/Task_2/build/CMakeFiles/rebuild_cache.dir
